@@ -9456,6 +9456,20 @@ a.mdc-list-item {
 .mdc-top-app-bar--dense-prominent-fixed-adjust {
   padding-top: 96px;
 }
+/*Summary*/
+.summary{
+  border: 1px solid #7a00ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+/*labels*/
+.summary .label{
+  color: #7a00ff;
+}
+/*Summary 2*/
+.summary-2{
+  margin-top: 30px;
+}
 
 @media (max-width: 599px) {
   .mdc-top-app-bar__row {
