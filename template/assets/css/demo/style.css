@@ -22898,22 +22898,13 @@ address p {
 
 .mdc-drawer .mdc-drawer__header .brand-logo {
   display: block;
+  font-size: 30px;
+  font-weight: 600;
+  color: #F7B41E;
   padding: 28px 0;
 }
-
-.mdc-drawer .mdc-drawer__content .user-info {
-  color: #fff;
-  margin: 7px 16px 7px 27px;
-  margin-bottom: 22px;
-  font-weight: 300;
-}
-
-.mdc-drawer .mdc-drawer__content .user-info .name {
-  font-weight: 500;
-}
-
-.mdc-drawer .mdc-drawer__content .user-info p {
-  margin-bottom: 6px;
+.mdc-drawer .mdc-drawer__header .brand-logo span{
+color: white;
 }
 
 .mdc-drawer .mdc-drawer__content .mdc-drawer-menu .mdc-drawer-item {
