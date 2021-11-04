@@ -1,50 +1,68 @@
+$(document).ready(function(){
 
-  const prevBtns = document.querySelectorAll(".btn-prev");
-  const nextBtns = document.querySelectorAll(".btn-next");
-  const progress = document.getElementById("progress");
-  const formSteps = document.querySelectorAll(".form-step");
-  const progressSteps = document.querySelectorAll(".progress-step");
-  
-  let formStepsNum = 0;
-  
-  nextBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      formStepsNum++;
-      updateFormSteps();
-      updateProgressbar();
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var opacity;
+    
+    $(".next").click(function(){
+    
+    current_fs = $(this).parent();
+    next_fs = $(this).parent().next();
+    
+    //Add Class Active
+    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+    
+    //show the next fieldset
+    next_fs.show();
+    //hide the current fieldset with style
+    current_fs.animate({opacity: 0}, {
+    step: function(now) {
+    // for making fielset appear animation
+    opacity = 1 - now;
+    
+    current_fs.css({
+    'display': 'none',
+    'position': 'relative'
     });
-  });
-  
-  prevBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      formStepsNum--;
-      updateFormSteps();
-      updateProgressbar();
+    next_fs.css({'opacity': opacity});
+    },
+    duration: 600
     });
-  });
-  
-  function updateFormSteps() {
-    formSteps.forEach((formStep) => {
-      formStep.classList.contains("form-step-active") &&
-        formStep.classList.remove("form-step-active");
     });
-  
-    formSteps[formStepsNum].classList.add("form-step-active");
-  }
-  
-  function updateProgressbar() {
-    progressSteps.forEach((progressStep, idx) => {
-      if (idx < formStepsNum + 1) {
-        progressStep.classList.add("progress-step-active");
-      } else {
-        progressStep.classList.remove("progress-step-active");
-      }
+    
+    $(".previous").click(function(){
+    
+    current_fs = $(this).parent();
+    previous_fs = $(this).parent().prev();
+    
+    //Remove class active
+    $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+    
+    //show the previous fieldset
+    previous_fs.show();
+    
+    //hide the current fieldset with style
+    current_fs.animate({opacity: 0}, {
+    step: function(now) {
+    // for making fielset appear animation
+    opacity = 1 - now;
+    
+    current_fs.css({
+    'display': 'none',
+    'position': 'relative'
     });
-  
-    const progressActive = document.querySelectorAll(".progress-step-active");
-  
-    progress.style.width =
-      ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
-  }
-  
-  
+    previous_fs.css({'opacity': opacity});
+    },
+    duration: 600
+    });
+    });
+    
+    $('.radio-group .radio').click(function(){
+    $(this).parent().find('.radio').removeClass('selected');
+    $(this).addClass('selected');
+    });
+    
+    $(".submit").click(function(){
+    return false;
+    })
+    
+    });

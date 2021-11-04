@@ -1,188 +1,203 @@
+p {
+    color: grey
+}
 
-  /*--------------------------------------------------------------
-  # Sections General
-  --------------------------------------------------------------*/
-  section {
-    padding: 60px 0;
-    overflow: hidden;
-  }
-  
-  .section-bg {
-    background-color: #f3f5fa;
-  }
-  
-  .section-title {
-    text-align: center;
-  }
-  
-  .section-title h2 {
-    font-size: 32px;
-    font-weight: bold;
+#heading {
     text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: #37517e;
-  }
-  
-  .section-title p {
-    margin-bottom: 0;
-  }
-  
-  /* Global Stylings */
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  input {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-  }
-  
-  .width-50 {
-    width: 50%;
-  }
-  
-  .ml-auto {
-    margin-left: auto;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  #register h3{
     color: #08376B;
-    margin: 10px 0 30px;
-  }
-  #register p{
-    text-align: justify;
-  }
-  
-  /* Progressbar */
-  .progressbar {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    counter-reset: step;
-    margin: 2rem 0 4rem;
-  }
-  
-  .progressbar::before,
-  .progress {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 2px;
-    width: 100%;
-    background-color: #dcdcdc;
-    z-index: -1;
-  }
-  
-  .progress {
-    background-color: #1e398d;
-    width: 0%;
-    transition: 0.3s;
-  }
-  
-  .progress-step {
-    font-size: 1.25em;
-    font-weight: 500;
-    border: 2px solid #cccccc;
-    background-color: white;
-    height: 2.4em;
-    width: 2.4em;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: relative;
-    color: #1e398d;
-  }
-  
-  .progress-step::before {
-    counter-increment: step;
-    content: counter(step);
-  }
-  
-  .progress-step::after {
-    content: attr(data-title);
-    position: absolute;
-    top: calc(100% + 0.5rem);
-    font-size: 0.85rem;
-    color: #666;
-  }
-  
-  .progress-step-active {
-    border-color: #1e398d;
-    color: #1e398d;
-  }
-  
-  /* Form */
-  .form {
-    width: clamp(350px, 50%, 600px);
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    border-radius: 0.35rem;
-    padding: 1.5rem;
-  }
-  
-  .form-step {
-    display: none;
-    transform-origin: top;
-    animation: animate 0.5s;
-  }
-  
-  .form-step-active {
-    display: block;
-  }
-  
-  .input-group {
-    margin: 2rem 0;
-  }
-  
-  @keyframes animate {
-    from {
-      transform: scale(1, 0);
-      opacity: 0;
-    }
-    to {
-      transform: scale(1, 1);
-      opacity: 1;
-    }
-  }
-  
-  /* Button */
-  .btns-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  
-  .btn {
-    margin: 10px 0 5px 0;
-    padding: 0.75rem;
-    display: block;
-    text-decoration: none;
-    background-color: #08376B;
-    color: #f3f3f3;
+    font-weight: normal
+}
+
+#msform {
     text-align: center;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .btn:hover {
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input,
+#msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #08376B;
+    outline-width: 0
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #08376B;
+    font-weight: bold;
     color: white;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #166ab5;
-    background-color: #166ab5;
-  }
-  
-  
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 30px 10px 10px 5px;
+    float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #1668c7
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #08376B;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #08376B;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #08376B
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    content: "1"
+}
+
+#progressbar #personal:before {
+    content: "2"
+}
+
+#progressbar #payment:before {
+    content: "3"
+}
+
+#progressbar #confirm:before {
+    content: "4"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #08376B
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #08376B
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}

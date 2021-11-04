@@ -8,12 +8,12 @@
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../../assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
-  <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- Layout styles -->
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="../../../assets/css/demo/style.css">
   <!-- Favicons -->
   <link href="../../../assets/images/favicon/android-chrome-192x192.png" rel="icon">
@@ -77,6 +77,11 @@
                     Job Details
                   </a>
                 </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/jobs/shortlist.html">
+                      Shortlist
+                    </a>
+                  </div>
               </nav>
             </div>
           </div>
@@ -96,11 +101,6 @@
                 <div class="mdc-list-item mdc-drawer-item">
                   <a class="mdc-drawer-link" href="../../pages/job-post/manage-job.html">
                     Manage Job Post
-                  </a>
-                </div>
-                <div class="mdc-list-item mdc-drawer-item">
-                  <a class="mdc-drawer-link" href="../../pages/job-post/job-preview.html">
-                    Job Preview
                   </a>
                 </div>
               </nav>
@@ -241,94 +241,170 @@
       <!-- partial -->
       <div class="page-wrapper mdc-toolbar-fixed-adjust">
         <main class="content-wrapper">
-            <div class="mdc-layout-grid">
-                <div class="mdc-layout-grid__inner">
-                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-4-desktop stretch-card">
-                    <div class="mdc-card">
-                        <h6 class="card-title text-center text-primary" style="font-weight: 700;">IT Technical Support</h6>
-                        <h6 class="text-center" style="margin-top: 10px;">Faculty - College of Engineering and Architecture</h6>
-                        <h6 class="text-center" style="margin-top: 10px; font-weight: 400;">Posted on June 06, 2021</h6>
-                        <button class="mdc-button mdc-button--raised" style="padding: 25px; font-size: 12px;  margin-top: 20px; border-radius: 50px">15 Applicants</button>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+                <div class="mdc-card">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="card-title mb-2 mb-sm-0">Filter Applicants</h4>
+                        </div> 
+                    <div class="container">
+                        <h5 class="text-primary" style="margin-top: 20px;">ELIGIBILITY</h5>
+                        <h6>You may check more than one <span style="color: red;">*</span></h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                None
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                Civil Service Sub-Professional
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                Civil Service Professional
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                Other Eligibilities Granted under Speacial Laws
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                Other Eligibilities Granted under Speacial Laws
+                            </label>
+                          </div>
                     </div>
-                  </div>
-                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop stretch-card">
-                    <div class="mdc-card">
-                        <h6 class="card-title" style="font-weight: 700;">Job Description</h6>
-                        <h6 style="margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cum. <br><br>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores incidunt nulla blanditiis dolor, aspernatur asperiores. <br><br>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, excepturi. <br><br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam est expedita, doloribus molestias error commodi similique nostrum officia nam delectus.</h6>
+                    <div class="container">
+                        <h5 class="text-primary" style="margin-top: 30px;">COURSE</h5>
+                        <h6>Choose College Department  <span style="color: red;">*</span></h6>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: auto;">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        <h6 style="margin-top: 20px;">Choose College Course <span style="color: red;">*</span></h6>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: auto;">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
-                  </div>
-                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-4-desktop stretch-card">
-                    <div class="mdc-card">
-                        <h6 class="card-title" style="font-weight: 700;">Additional Qualifications</h6>
-                        <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
-                          <h6 style="margin-top: 13px;">Must be knowledgeable in diferent online platfroms in conduction online/distant learning/teaching (WebEx, Zoom, Google Meet, etc.)</h6>
-                        </div>
+                    <div class="container">
+                        <h5 class="text-primary" style="margin-top: 30px;">EDUCATIONAL ATTAINMENT</h5>
+                        <h6>Select Highest Educational Attainment <span style="color: red;">*</span></h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1" style="font-size: 15px;">
+                                Post Graduate Studies
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1" style="font-size: 15px;">
+                                Bachelor’s Degree
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1" style="font-size: 15px;">
+                                Bachelor’s Degree
+                            </label>
+                          </div>  
                     </div>
-                  </div>
-                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop stretch-card">
-                    <div class="mdc-card">
-                        <h6 class="card-title" style="font-weight: 700;">Educational Qualifications</h6>
-                        <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
-                          <h6 style="margin-top: 13px;">Graduates of the above-mentioned program, with Master’s Degree in related field.</h6>
-                        </div>
-                        <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
-                          <h6 style="margin-top: 13px;">Possess the appropriate PRC License.</h6>
-                        </div>
+                    <div class="container">
+                        <h5 class="text-primary" style="margin-top: 30px;">WORK EXPERIENCE</h5>
+                        <h6>Choose Minimum Years of Experience<span style="color: red;">*</span></h6>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: auto;">
+                            <option selected>Open this select menu</option>
+                            <option value="1">5 years or more relevant experience</option>
+                            <option value="2">4.1 to 5 years relevant experience</option>
+                            <option value="3">3.1 to 4 years relevant experience</option>
+                            <option value="4">2.1 to 3 years relevant experience</option>
+                            <option value="5">1 to 2 years relevant experience</option>
+                          </select>
                     </div>
-                  </div>
-                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-4-desktop stretch-card">
-                    <div class="mdc-card">
-                        <h6 class="card-title" style="font-weight: 700;">Experience Requirements</h6>
-                        <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
-                          <h6 style="margin-top: 13px;">Demonstrate effective teaching strategies and have at least 1 year in teching, research, industrial work or a combination thereof;</h6>
-                        </div>
-                        <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
-                          <h6 style="margin-top: 13px;">Research experience preferably includes having published research papers in jjournals, or presented research papers in conferences / research fora;</h6>
-                        </div>
-                        <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
-                          <h6 style="margin-top: 13px;">Proficient in the use of the English language, both written and oral;</h6>
-                        </div>
-                        <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
-                          <h6 style="margin-top: 13px;">Excellent work attitude and interpersonal skills.</h6>
-                        </div>
+                    <div class="container">
+                        <h5 class="text-primary" style="margin-top: 30px;">NO. OF APPLICANTS</h5>
+                        <h6>Input the Number of Applicants you want to Shortlist<span style="color: red;">*</span></h6>
+                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: auto;">
                     </div>
-                  </div>
-                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop stretch-card">
-                    <div class="mdc-card">
-                        <h6 class="card-title" style="font-weight: 700;">Documentary Requirements</h6>
-                        <h6 style="margin-top: 10px;">1. Letter of Intent<br><br>
-                        2. CSC Form 212, Revised 2017 (Personal Data Sheet) with ID picture taken within the last 6 months, 3.5cm x 4.5cm (passport size) and with full and handwritten name tag and signature overprinted name <br><br>
-                        3. Curriculum Vitae <br><br>
-                        4. Photosopy of Transcript of Records <br><br>
-                        5. Photocopy of Diploma <br><br>
-                        6. Certificatie fo the appropriate/required eligibility/licenses.<br><br>  
-                        <div class="indent" style="margin-left: 20px;">
-                            a. Photocopy of Professional Regulation Commission (PRC) professional ID card/certificate of registration/license and other eligibilities, if available <br><br>
-                            b. Photocopy of ratings obtained in the Licensure Examination for teachers (LET)/Professional Board Examination for Teachers (PBET), if <available class="br"><br></available>
-                        </div><br>
-                        7. Photocopy from the authenticated copy of Diploma and TOR (authenticated by the school registrar)<br><br> 
-                        8. Photocopy from the authenticated copy of unexpired PRC License / Board Rating / CS Eligibility <br><br>
-                        9. Photocopy of Certificate of relevant trainings / seminars attended (if applicable) <br><br>
-                        10. Photocopy of Certificate of Employment (if applicable) <br><br>
-                        11. Individual Performance Commitment and Review (IPCR) / Performance Rating in the last 2 rating periods, if applicable <br>    
-                        </h6>
+                    <div class="container" style="margin: 30px 0px 30px 0px;">
+                        <button class="mdc-button mdc-button--primary" style="padding: 20px 20px;">
+                            SHORTLIST APPLICANTS
+                          </button>
                     </div>
+                </div>
+            </div>
+
+             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
+                <div class="mdc-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h4 class="card-title mb-2 mb-sm-0">IT Technical Support</h4>
+                      <div class="d-flex justtify-content-between align-items-center">
+                        <button class="mdc-button mdc-button--success text-white" style="background-color: #F7B41E;">Rate Applicants</button>
+                      </div>
+                    </div>
+                    <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Total Applicants: <span>25</span></p><br>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class="bg-primary">
+                        <tr>
+                          <th class="text-left text-white">ID</th>
+                          <th class="text-white">FULL NAME</th>
+                          <th class="text-white">DATE OF APPLICATION</th>
+                          <th class="text-white">STATUS</th>
+                          <th class="text-white">ACTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-left">1</td>
+                          <td>Art Christian Awitin</td>
+                          <td>01/11/2021</td>
+                          <td>Pending</td>
+                          <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">2</td>
+                          <td>Trisha Quinto</td>
+                          <td>01/11/2021</td>
+                          <td>Pending</td>
+                          <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">3</td>
+                          <td>Junihench Actub</td>
+                          <td>01/11/2021</td>
+                          <td>Pending</td>
+                          <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">4</td>
+                          <td>Roy Johairi Lucman</td>
+                          <td>01/11/2021</td>
+                          <td>Pending</td>
+                          <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-            </div>            
+              </div>
+            </div>
+          </div>
         </main>
         <!-- partial -->
-      </div>   
+      </div>    
   </div>
 </div>
   <!-- plugins:js -->
@@ -337,11 +413,10 @@
   <!-- Plugin js for this page-->
   <!-- End plugin js for this page-->
   <!-- inject:js -->
-  <!--Boostrap js-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
   <script src="../../../assets/js/material.js"></script>
   <script src="../../../assets/js/misc.js"></script>
+  <!--Boostrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
   <!-- End custom js for this page-->
