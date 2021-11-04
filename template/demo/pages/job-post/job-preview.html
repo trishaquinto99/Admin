@@ -8,6 +8,8 @@
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../../assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <!-- End plugin css for this page -->
@@ -94,6 +96,9 @@
                 <div class="mdc-list-item mdc-drawer-item">
                   <a class="mdc-drawer-link" href="../../pages/job-post/manage-job.html">
                     Manage Job Post
+                  </a>
+                  <a class="mdc-drawer-link" href="../../pages/job-post/job-preview.html">
+                    Job Preview
                   </a>
                 </div>
               </nav>
@@ -399,73 +404,75 @@
       <!-- partial -->
       <div class="page-wrapper mdc-toolbar-fixed-adjust">
         <main class="content-wrapper">
-          <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-              
-              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
-                <div class="mdc-card bg-primary text-white">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="font-weight-normal">IT TECHNICAL SUPPORT</h3>
-                  </div>
-                  <div class="mdc-layout-grid__inner align-items-center">
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-2-phone">
-                      <div>
-                        <h5 class="font-weight-normal mt-2">5 Applicants</h5>
-                        <a href="../../pages/jobs/job-details.html"><button class="mdc-button mt-3 mdc-button--light">
-                            View Job Details
-                          </button></a>
-                      </div>
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-4-desktop stretch-card">
+                    <div class="mdc-card">
+                        <h6 class="card-title text-center text-primary" style="font-weight: 700;">IT Technical Support</h6>
+                        <h6 class="text-center" style="margin-top: 10px;">Faculty - College of Engineering and Architecture</h6>
+                        <h6 class="text-center" style="margin-top: 10px; font-weight: 400;">Posted on June 06, 2021</h6>
+                        <div class="res-circle bg-primary">
+                            <div class="circle-txt text-white">15</div>
+                            <div class="circle-txt2 text-white">Applicants</div>
+                        </div>
                     </div>
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-2-phone">
-                      <canvas id="impressions-chart" height="80"></canvas>
+                  </div>
+                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop stretch-card">
+                    <div class="mdc-card">
+                        <h6 class="card-title" style="font-weight: 700;">Job Description</h6>
+                        <h6 style="margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cum. <br><br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores incidunt nulla blanditiis dolor, aspernatur asperiores. <br><br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, excepturi. <br><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam est expedita, doloribus molestias error commodi similique nostrum officia nam delectus.</h6>
+                    </div>
+                  </div>
+                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-4-desktop stretch-card">
+                    <div class="mdc-card">
+                        <h6 class="card-title" style="font-weight: 700;">Additional Qualifications</h6>
+                        <h6 style="margin-top: 10px;">- Must be knowledgeable in diferent online platfroms in conduction online/distant learning/teaching (WebEx, Zoom, Google Meet, etc.)</h6>
+                    </div>
+                  </div>
+                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop stretch-card">
+                    <div class="mdc-card">
+                        <h6 class="card-title" style="font-weight: 700;">Educational Qualifications</h6>
+                        <h6 style="margin-top: 10px;">- Graduates of the above-mentioned program, with Master’s Degree in related field. <br><br>
+                        - Possess the appropriate PRC License
+                        </h6>
+                    </div>
+                  </div>
+                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-4-desktop stretch-card">
+                    <div class="mdc-card">
+                        <h6 class="card-title" style="font-weight: 700;">Experience Requirements</h6>
+                        <h6 style="margin-top: 10px;">- Demonstrate effective teaching strategies and have at least 1 year in teching, research, industrial work or a combination thereof; <br><br>
+                        - Research experience preferably includes having published research papers in jjournals, or presented research papers in conferences / research fora; <br><br>
+                        - Proficient in the use of the English language, both written and oral; <br><br>
+                        - Excellent work attitude and interpersonal skills.
+                        </h6>
+                    </div>
+                  </div>
+                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop stretch-card">
+                    <div class="mdc-card">
+                        <h6 class="card-title" style="font-weight: 700;">Documentary Requirements</h6>
+                        <h6 style="margin-top: 10px;">1. Letter of Intent<br><br>
+                        2. CSC Form 212, Revised 2017 (Personal Data Sheet) with ID picture taken within the last 6 months, 3.5cm x 4.5cm (passport size) and with full and handwritten name tag and signature overprinted name <br><br>
+                        3. Curriculum Vitae <br><br>
+                        4. Photosopy of Transcript of Records <br><br>
+                        5. Photocopy of Diploma <br><br>
+                        6. Certificatie fo the appropriate/required eligibility/licenses.<br><br>  
+                        <div class="indent" style="margin-left: 20px;">
+                            a. Photocopy of Professional Regulation Commission (PRC) professional ID card/certificate of registration/license and other eligibilities, if available <br><br>
+                            b. Photocopy of ratings obtained in the Licensure Examination for teachers (LET)/Professional Board Examination for Teachers (PBET), if <available class="br"><br></available>
+                        </div><br>
+                        7. Photocopy from the authenticated copy of Diploma and TOR (authenticated by the school registrar)<br><br> 
+                        8. Photocopy from the authenticated copy of unexpired PRC License / Board Rating / CS Eligibility <br><br>
+                        9. Photocopy of Certificate of relevant trainings / seminars attended (if applicable) <br><br>
+                        10. Photocopy of Certificate of Employment (if applicable) <br><br>
+                        11. Individual Performance Commitment and Review (IPCR) / Performance Rating in the last 2 rating periods, if applicable <br>    
+                        </h6>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
-                <div class="mdc-card bg-primary text-white">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="font-weight-normal">MOBILE PROGRAMMER</h3>
-                  </div>
-                  <div class="mdc-layout-grid__inner align-items-center">
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-2-phone">
-                      <div>
-                        <h5 class="font-weight-normal mt-2">5 Applicants</h5>
-                        <a href="../../pages/jobs/job-details.html"><button class="mdc-button mt-3 mdc-button--light">
-                            View Job Details
-                          </button></a>
-                      </div>
-                    </div>
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-2-phone">
-                      <canvas id="impressions-chart" height="80"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
-                <div class="mdc-card bg-primary text-white">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="font-weight-normal">IT FACULTY</h3>
-                  </div>
-                  <div class="mdc-layout-grid__inner align-items-center">
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-2-phone">
-                      <div>
-                        <h5 class="font-weight-normal mt-2">5 Applicants</h5>
-                        <a href="../../pages/jobs/job-details.html"><button class="mdc-button mt-3 mdc-button--light">
-                            View Job Details
-                          </button></a>
-                      </div>
-                    </div>
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-2-phone">
-                      <canvas id="impressions-chart" height="80"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                  
-             
-            </div>
-          </div>
+            </div>            
         </main>
         <!-- partial -->
       </div>   
@@ -477,6 +484,9 @@
   <!-- Plugin js for this page-->
   <!-- End plugin js for this page-->
   <!-- inject:js -->
+  <!--Boostrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
   <script src="../../../assets/js/material.js"></script>
   <script src="../../../assets/js/misc.js"></script>
   <!-- endinject -->

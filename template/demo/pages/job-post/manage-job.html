@@ -399,71 +399,112 @@
       <!-- partial -->
       <div class="page-wrapper mdc-toolbar-fixed-adjust">
         <main class="content-wrapper">
+          <div class="mdc-select demo-width-class bg-white" style="margin-left: 13px;" data-mdc-auto-init="MDCSelect">
+            <input type="hidden" name="enhanced-select">
+            <i class="mdc-select__dropdown-icon"></i>
+            <div class="mdc-select__selected-text"></div>
+            <div class="mdc-select__menu mdc-menu-surface demo-width-class">
+              <ul class="mdc-list">
+                <li class="mdc-list-item mdc-list-item--selected" data-value="" aria-selected="true">
+                </li>
+                <li class="mdc-list-item" data-value="grains">
+                  Bread, Cereal, Rice, and Pasta
+                </li>
+                <li class="mdc-list-item" data-value="vegetables">
+                  Vegetables
+                </li>
+                <li class="mdc-list-item" data-value="fruit">
+                  Fruit
+                </li>
+              </ul>
+            </div>
+            <span class="mdc-floating-label text-primary" style="font-weight: 700;">Sort by:</span>
+            <div class="mdc-line-ripple"></div>
+          </div>
+          <div class="mdc-select demo-width-class bg-white" data-mdc-auto-init="MDCSelect">
+            <input type="hidden" name="enhanced-select">
+            <i class="mdc-select__dropdown-icon"></i>
+            <div class="mdc-select__selected-text"></div>
+            <div class="mdc-select__menu mdc-menu-surface demo-width-class">
+              <ul class="mdc-list">
+                <li class="mdc-list-item mdc-list-item--selected" data-value="" aria-selected="true">
+                </li>
+                <li class="mdc-list-item" data-value="grains">
+                  Bread, Cereal, Rice, and Pasta
+                </li>
+                <li class="mdc-list-item" data-value="vegetables">
+                  Vegetables
+                </li>
+                <li class="mdc-list-item" data-value="fruit">
+                  Fruit
+                </li>
+              </ul>
+            </div>
+            <span class="mdc-floating-label text-primary" style="font-weight: 700;">Filter by:</span>
+            <div class="mdc-line-ripple"></div>
+          </div>
           <div class="mdc-layout-grid">
             <div class="mdc-layout-grid__inner">
-              
-              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
-                <div class="mdc-card bg-primary text-white">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="font-weight-normal">IT TECHNICAL SUPPORT</h3>
-                  </div>
-                  <div class="mdc-layout-grid__inner align-items-center">
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-2-phone">
-                      <div>
-                        <h5 class="font-weight-normal mt-2">5 Applicants</h5>
-                        <a href="../../pages/jobs/job-details.html"><button class="mdc-button mt-3 mdc-button--light">
-                            View Job Details
-                          </button></a>
+             <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                <div class="mdc-card p-0">
+                  <div class="mdc-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h4 class="card-title mb-2 mb-sm-0">IT Technical Support</h4>
+                      <div class="d-flex justtify-content-between align-items-center">
+                        <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Total Applicants: <span>25</span></p>
                       </div>
                     </div>
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-2-phone">
-                      <canvas id="impressions-chart" height="80"></canvas>
-                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class="bg-primary">
+                        <tr>
+                          <th class="text-left text-white">JOB TITLE</th>
+                          <th class="text-white">NO. OF APPLICANTS</th>
+                          <th class="text-white">JOB TYPE</th>
+                          <th class="text-white">DATE POSTED</th>
+                          <th class="text-white">STATUS</th>
+                          <th class="text-white">ACTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-left">IT Technical Support</td>
+                          <td>10</td>
+                          <td>Non Teaching Personnel</td>
+                          <td>01/20/2020</td>
+                          <td>Archived</td>
+                          <td><a href="../../pages/job-post/job-preview.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">IT Instructor</td>
+                          <td>5</td>
+                          <td>Teaching Personnel</td>
+                          <td>08/20/2021</td>
+                          <td>Closed</td>
+                          <td><a href="../../pages/job-post/job-preview.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">Geodetic Engineering</td>
+                          <td>5</td>
+                          <td>Teaching Personnel</td>
+                          <td>09/20/2021</td>
+                          <td>Active</td>    
+                          <td><a href="../../pages/job-post/job-preview.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">Accountant</td>
+                          <td>5</td>
+                          <td>Non Teaching Personnel</td>
+                          <td>10/20/2021</td>
+                          <td>Active</td>
+                          <td><a href="../../pages/job-post/job-preview.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
-              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
-                <div class="mdc-card bg-primary text-white">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="font-weight-normal">MOBILE PROGRAMMER</h3>
-                  </div>
-                  <div class="mdc-layout-grid__inner align-items-center">
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-2-phone">
-                      <div>
-                        <h5 class="font-weight-normal mt-2">5 Applicants</h5>
-                        <a href="../../pages/jobs/job-details.html"><button class="mdc-button mt-3 mdc-button--light">
-                            View Job Details
-                          </button></a>
-                      </div>
-                    </div>
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-2-phone">
-                      <canvas id="impressions-chart" height="80"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
-                <div class="mdc-card bg-primary text-white">
-                  <div class="d-flex justify-content-between">
-                    <h3 class="font-weight-normal">IT FACULTY</h3>
-                  </div>
-                  <div class="mdc-layout-grid__inner align-items-center">
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-2-phone">
-                      <div>
-                        <h5 class="font-weight-normal mt-2">5 Applicants</h5>
-                        <a href="../../pages/jobs/job-details.html"><button class="mdc-button mt-3 mdc-button--light">
-                            View Job Details
-                          </button></a>
-                      </div>
-                    </div>
-                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-2-phone">
-                      <canvas id="impressions-chart" height="80"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                  
-             
             </div>
           </div>
         </main>

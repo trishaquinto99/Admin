@@ -9531,7 +9531,37 @@ a.mdc-list-item {
   border-radius: 6.25rem;
   opacity: .5
 }
-
+/**Circle with text*/
+.res-circle {
+  width: 40%;
+  border-radius: 50%;
+  line-height: 0;
+  position: relative;
+  margin-left: 100px;
+}
+.res-circle::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.circle-txt {
+  position: absolute;
+  bottom: 65%;
+  width: 100%;
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+.circle-txt2 {
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 @media (max-width: 599px) {
   .mdc-top-app-bar__row {

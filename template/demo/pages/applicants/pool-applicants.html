@@ -54,17 +54,12 @@
                     Pool of Applicants
                   </a>
                 </div>
-                <div class="mdc-list-item mdc-drawer-item">
-                  <a class="mdc-drawer-link" href="../../pages/applicants/view-applicants.html">
-                    View Applicant
-                  </a>
-                </div>
               </nav>
             </div>
           </div>
           <div class="mdc-list-item mdc-drawer-item">
             <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="jobs-page-submenu">
-              <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">supervisor_account</i>
+              <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">work</i>
               Jobs
               <i class="mdc-drawer-arrow material-icons">chevron_right</i>
             </a>
@@ -85,11 +80,11 @@
           </div>
           <div class="mdc-list-item mdc-drawer-item">
             <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="job-post-submenu">
-              <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">supervisor_account</i>
+              <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
               Job Post
               <i class="mdc-drawer-arrow material-icons">chevron_right</i>
             </a>
-            <div class="mdc-expansion-panel" id="jobs-post-submenu">
+            <div class="mdc-expansion-panel" id="job-post-submenu">
               <nav class="mdc-list mdc-drawer-submenu">
                 <div class="mdc-list-item mdc-drawer-item">
                   <a class="mdc-drawer-link" href="../../pages/job-post/create-post.html">
@@ -97,7 +92,7 @@
                   </a>
                 </div>
                 <div class="mdc-list-item mdc-drawer-item">
-                  <a class="mdc-drawer-link" href="pages/jobs/job-details.html">
+                  <a class="mdc-drawer-link" href="../../pages/job-post/manage-job.html">
                     Manage Job Post
                   </a>
                 </div>
@@ -404,11 +399,7 @@
       <!-- partial -->
       <div class="page-wrapper mdc-toolbar-fixed-adjust">
         <main class="content-wrapper">
-          <div class="mdc-select demo-width-class">
-            <div class="mdc-select__selected-text"></div>
-            <span class="mdc-floating-label">Total Applicants:</span>
-          </div>
-          <div class="mdc-select demo-width-class" data-mdc-auto-init="MDCSelect">
+          <div class="mdc-select demo-width-class bg-white" style="margin-left: 13px;" data-mdc-auto-init="MDCSelect">
             <input type="hidden" name="enhanced-select">
             <i class="mdc-select__dropdown-icon"></i>
             <div class="mdc-select__selected-text"></div>
@@ -427,10 +418,10 @@
                 </li>
               </ul>
             </div>
-            <span class="mdc-floating-label">Sort by:</span>
+            <span class="mdc-floating-label text-primary" style="font-weight: 700;">Sort by:</span>
             <div class="mdc-line-ripple"></div>
           </div>
-          <div class="mdc-select demo-width-class" data-mdc-auto-init="MDCSelect">
+          <div class="mdc-select demo-width-class bg-white" data-mdc-auto-init="MDCSelect">
             <input type="hidden" name="enhanced-select">
             <i class="mdc-select__dropdown-icon"></i>
             <div class="mdc-select__selected-text"></div>
@@ -449,27 +440,34 @@
                 </li>
               </ul>
             </div>
-            <span class="mdc-floating-label">Filter by:</span>
+            <span class="mdc-floating-label text-primary" style="font-weight: 700;">Filter by:</span>
             <div class="mdc-line-ripple"></div>
           </div>
           <div class="mdc-layout-grid">
             <div class="mdc-layout-grid__inner">
              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                 <div class="mdc-card p-0">
-                  <h6 class="card-title card-padding pb-0">Pool of Applicants</h6>
+                  <div class="mdc-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h4 class="card-title mb-2 mb-sm-0">Pool of Applicants</h4>
+                      <div class="d-flex justtify-content-between align-items-center">
+                        <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Total Applicants: <span>25</span></p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="table-responsive">
-                    <table class="table table-hoverable">
-                      <thead>
+                    <table class="table">
+                      <thead class="bg-primary">
                         <tr>
-                          <th class="text-left">ID</th>
-                          <th>FULL NAME</th>
-                          <th>DATE OF BIRTH</th>
-                          <th>CONTACT</th>
-                          <th>EMAIL</th>
-                          <th>JOB APPLIED</th>
-                          <th>DATE OF APPLICATION</th>
-                          <th>STATUS</th>
-                          <th>ACTION</th>
+                          <th class="text-left text-white">ID</th>
+                          <th class="text-white">FULL NAME</th>
+                          <th class="text-white">DATE OF BIRTH</th>
+                          <th class="text-white">CONTACT</th>
+                          <th class="text-white">EMAIL</th>
+                          <th class="text-white">JOB APPLIED</th>
+                          <th class="text-white">DATE OF APPLICATION</th>
+                          <th class="text-white">STATUS</th>
+                          <th class="text-white">ACTION</th>
                         </tr>
                       </thead>
                       <tbody>
