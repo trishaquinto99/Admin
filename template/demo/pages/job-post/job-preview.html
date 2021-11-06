@@ -8,6 +8,8 @@
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../../assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- endinject -->
@@ -72,11 +74,6 @@
                     Job Lists
                   </a>
                 </div>
-                <div class="mdc-list-item mdc-drawer-item">
-                  <a class="mdc-drawer-link" href="../../pages/jobs/job-details.html">
-                    Job Details
-                  </a>
-                </div>
               </nav>
             </div>
           </div>
@@ -138,7 +135,7 @@
               <div class="mdc-notched-outline__trailing"></div>
             </div>
           </div>
-          <button class="mdc-button mdc-button--raised" style="border-radius: 20px; margin-left: 20px;"><i class="material-icons mdc-button__icon">add</i>Create a Post</button>
+          <a href="../../pages/job-post/create-post.html"><button class="mdc-button mdc-button--raised" style="border-radius: 20px; margin-left: 20px;"><i class="material-icons mdc-button__icon">add</i>Create a Post</button></a>
         </div>
         <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-top-app-bar__section-right">
           <div class="menu-button-container menu-profile d-none d-md-block">
@@ -243,12 +240,14 @@
         <main class="content-wrapper">
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
-                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-4-desktop stretch-card">
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
                     <div class="mdc-card">
                         <h6 class="card-title text-center text-primary" style="font-weight: 700;">IT Technical Support</h6>
                         <h6 class="text-center" style="margin-top: 10px;">Faculty - College of Engineering and Architecture</h6>
                         <h6 class="text-center" style="margin-top: 10px; font-weight: 400;">Posted on June 06, 2021</h6>
-                        <button class="mdc-button mdc-button--raised" style="padding: 25px; font-size: 12px;  margin-top: 20px; border-radius: 50px">15 Applicants</button>
+                        <div class="d-flex justify-content-center">
+                          <a href="../../pages/jobs/job-details.html"><button class="mdc-button mdc-button--raised" style="width: 100px; height: 100px; padding: 10px 16px; border-radius: 50px; font-size: 12px;text-align: center;">15 Applicants</button></a>
+                        </div>
                     </div>
                   </div>
                   <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop stretch-card">
@@ -263,8 +262,8 @@
                   <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-4-desktop stretch-card">
                     <div class="mdc-card">
                         <h6 class="card-title" style="font-weight: 700;">Additional Qualifications</h6>
-                        <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
+                        <div class="d-flex justify-content-between">
+                          <i class="fas fa-check-double" style="margin-top: 10px; margin-right: 10px; color: royalblue;"></i>
                           <h6 style="margin-top: 13px;">Must be knowledgeable in diferent online platfroms in conduction online/distant learning/teaching (WebEx, Zoom, Google Meet, etc.)</h6>
                         </div>
                     </div>
@@ -273,11 +272,11 @@
                     <div class="mdc-card">
                         <h6 class="card-title" style="font-weight: 700;">Educational Qualifications</h6>
                         <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
+                          <i class="fas fa-check-double" style="margin-top: 10px; margin-right: 10px; color: royalblue;"></i>
                           <h6 style="margin-top: 13px;">Graduates of the above-mentioned program, with Master’s Degree in related field.</h6>
                         </div>
                         <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
+                          <i class="fas fa-check-double" style="margin-top: 10px; margin-right: 10px; color: royalblue;"></i>
                           <h6 style="margin-top: 13px;">Possess the appropriate PRC License.</h6>
                         </div>
                     </div>
@@ -286,19 +285,19 @@
                     <div class="mdc-card">
                         <h6 class="card-title" style="font-weight: 700;">Experience Requirements</h6>
                         <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
+                          <i class="fas fa-check-double" style="margin-top: 10px; margin-right: 10px; color: royalblue;"></i>
                           <h6 style="margin-top: 13px;">Demonstrate effective teaching strategies and have at least 1 year in teching, research, industrial work or a combination thereof;</h6>
                         </div>
                         <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
+                          <i class="fas fa-check-double" style="margin-top: 10px; margin-right: 10px; color: royalblue;"></i>
                           <h6 style="margin-top: 13px;">Research experience preferably includes having published research papers in jjournals, or presented research papers in conferences / research fora;</h6>
                         </div>
                         <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
+                          <i class="fas fa-check-double" style="margin-top: 10px; margin-right: 10px; color: royalblue;"></i>
                           <h6 style="margin-top: 13px;">Proficient in the use of the English language, both written and oral;</h6>
                         </div>
                         <div class="d-flex justify-content-start">
-                          <img src="../../../assets/images/check.png" alt="" style="width: 20px; height: 20px; margin-top: 10px; margin-right: 10px;">
+                          <i class="fas fa-check-double" style="margin-top: 10px; margin-right: 10px; color: royalblue;"></i>
                           <h6 style="margin-top: 13px;">Excellent work attitude and interpersonal skills.</h6>
                         </div>
                     </div>
