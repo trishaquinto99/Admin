@@ -8,6 +8,8 @@
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../../assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- endinject -->
@@ -93,14 +95,34 @@
                     Manage Job Post
                   </a>
                 </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                  <a class="mdc-drawer-link" href="../../pages/job-post/job-preview.html">
+                    Job Preview
+                  </a>
+                </div>
               </nav>
             </div>
           </div>
           <div class="mdc-list-item mdc-drawer-item">
-            <a class="mdc-drawer-link" href="../../pages/forms/basic-forms.html">
+            <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="job-post-submenu">
               <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">description</i>
               Job Offers
+              <i class="mdc-drawer-arrow material-icons">chevron_right</i>
             </a>
+            <div class="mdc-expansion-panel" id="job-post-submenu">
+              <nav class="mdc-list mdc-drawer-submenu">
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/job-offers/job-offers.html">
+                      Send Job Offer
+                    </a>
+                </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                  <a class="mdc-drawer-link" href="../../pages/job-offers/job-offer-preview.html">
+                    Job Offer Preview
+                  </a>
+                </div>
+              </nav>
+            </div>
           </div>
         </nav>
       </div>
@@ -231,57 +253,37 @@
       <!-- partial -->
       <div class="page-wrapper mdc-toolbar-fixed-adjust">
         <main class="content-wrapper">
-          <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-              <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-12-desktop stretch-card">
-                <div class="mdc-card">
-                  <h5 class="card-title text-primary" style="font-weight: 700; font-size: 25px;">What's the job you're hiring for?</h5>
-                    
-                  <div class="mb-3">
-                    <div class="row">
-                      <div class="col">
-                        <label for="exampleFormControlInput1" class="form-label" style="font-weight: 700; font-size: 20px; margin-top: 20px;">Select Job Type</label>
-                        <div class="input-group mb-3">
-                          <select class="form-select" id="inputGroupSelect02">
-                            <option selected>Select Job Type</option>
-                            <option value="1">Teaching Personnel</option>
-                            <option value="2">Non Teaching Personnel</option>
-                          </select>
-                        </div>                        
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                    <div class="mdc-card">
+                        <div class="d-flex justify-content-center">
+                          <img src="../../../assets/images/header.png" alt="" style="width: min-content;">
+                        </div>
+                        <div style="margin: 0 150px 0 200px;">
+                          <h5>April 26, 2021</h5><br>
+                          <h5>Art Christian C. Awitin</h5>
+                          <h5>Lapasan Cagayan de Oro</h5>
+                          <h5>09267838334</h5>
+                          <h5>artchristianawitin@gmail.com</h5><br>
+                          <h5>Dear Art,</h5><br>
+                          <h5>We are pleased to offer you the position of Guidance Counselor II under the Guidance Office which you will be reporting directly to the Vice Chancellor for Student Affairs Services. We believe your expertise and experience will be an asset to our university.</h5>
+                          <h5>Please see attached document for the list of pre-employment requirements to be complied on or before <u>May 14, 2021</u>. In the meantime, if you have any queries regarding this job offer, please feel free to contact us anytime at <u>recruitment.hrmo@ustp.edu.ph</u>.</h5>
+                          <h5>We look forward to having you on our team, trailblazer!</h5><br>
+                          <h5>Best regards,</h5>
+                          <h5>MARIA CECILIA L. PANGAN, PhD</h5>
+                          <h5>Director, Human Resource Management Office</h5>
+                          <h5>USTP CDO</h5><br>
+                          <h6 style="font-style: italic;">cc: Office of the Vice Chancellor for Student Affairs Services Guidance Office</h6>
+                        </div>
+                        <div class="d-flex justify-content-center" style="margin-top:50px;">
+                          <a href="../../pages/job-offers/job-offers.html"><button class="mdc-button mdc-button--raised" style="background-color: #F7B41E;padding: 30px; font-size: 15px;  margin-top: 20px; margin-right:20px;">EDIT</button></a>
+                          <button class="mdc-button mdc-button--raised" style="padding: 30px; font-size: 15px;  margin-top: 20px; margin-right:20px;">SEND</button>
                       </div>
-                      <div class="col">
-                        <label for="exampleFormControlInput1" class="form-label" style="font-weight: 700; font-size: 20px; margin-top: 20px;">Enter a new Job Title</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter a new Job Title">
-                      </div>
-                    </div>      
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 700; font-size: 20px;">Job Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 700; font-size: 20px;">Educational Qualifications</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 700; font-size: 20px;">Additional Qualifications</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 700; font-size: 20px;">Experience Requirements</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 700; font-size: 20px;">Documentary Requirements</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <a href="../../pages/job-post/manage-job.html"><button class="mdc-button mdc-button--raised" style="padding: 30px; font-size: 15px;  margin-top: 20px;">POST</button></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            </div>    
+            </div>            
         </main>
         <!-- partial -->
       </div>   
