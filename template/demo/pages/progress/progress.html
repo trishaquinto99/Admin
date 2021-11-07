@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Material Dash</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../../assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../../../assets/css/demo/style.css">
+  <link rel="stylesheet" href="../../../assets/css/demo/progress.css">
+  <!-- Favicons -->
+  <link href="../../../assets/images/favicon/android-chrome-192x192.png" rel="icon">
+  <link href="../../../assets/images/favicon/android-chrome-512x512.png" rel="icon">
+  <link href="../../../assets/images/favicon/apple-touch-icon.png" rel="icon">
+  <link href="../../../assets/images/favicon/favicon-16x16.png" rel="icon">
+  <link href="../../../assets/images/favicon/favicon-32x32.png" rel="icon">
+  <link href="../../../assets/images/favicon/favicon.ico" rel="icon">
+</head>
+<body>
+<script src="../assets/js/preloader.js"></script>
+<div class="body-wrapper">
+  <!-- partial:partials/_sidebar.html -->
+  <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+    <div class="mdc-drawer__header">
+      <a href="index.html" class="brand-logo">
+        e<span>RSP</span></a>
+      </a>
+    </div>
+    <div class="mdc-drawer__content">
+      
+      <div class="mdc-list-group">
+        <nav class="mdc-list mdc-drawer-menu">
+          <div class="mdc-list-item mdc-drawer-item">
+            <a class="mdc-drawer-link" href="../../index.html">
+              <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
+              Dashboard
+            </a>
+          </div>
+          <div class="mdc-list-item mdc-drawer-item">
+            <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="ui-sub-menu">
+              <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">supervisor_account</i>
+              Applicants
+              <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+            </a>
+            <div class="mdc-expansion-panel" id="ui-sub-menu">
+              <nav class="mdc-list mdc-drawer-submenu">
+                <div class="mdc-list-item mdc-drawer-item">
+                  <a class="mdc-drawer-link" href="../../pages/applicants/pool-applicants.html">
+                    Pool of Applicants
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="mdc-list-item mdc-drawer-item">
+            <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="jobs-page-submenu">
+              <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">work</i>
+              Jobs
+              <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+            </a>
+            <div class="mdc-expansion-panel" id="jobs-page-submenu">
+              <nav class="mdc-list mdc-drawer-submenu">
+                <div class="mdc-list-item mdc-drawer-item">
+                  <a class="mdc-drawer-link" href="../../pages/jobs/job-list.html">
+                    Job Lists
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="mdc-list-item mdc-drawer-item">
+            <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="job-post-submenu">
+              <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+              Job Post
+              <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+            </a>
+            <div class="mdc-expansion-panel" id="job-post-submenu">
+              <nav class="mdc-list mdc-drawer-submenu">
+                <div class="mdc-list-item mdc-drawer-item">
+                  <a class="mdc-drawer-link" href="../../pages/job-post/create-post.html">
+                    Create Job Post
+                  </a>
+                </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                  <a class="mdc-drawer-link" href="../../pages/job-post/manage-job.html">
+                    Manage Job Post
+                  </a>
+                </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                  <a class="mdc-drawer-link" href="../../pages/job-post/job-preview.html">
+                    Job Preview
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="mdc-list-item mdc-drawer-item">
+            <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="job-post-submenu">
+              <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">description</i>
+              Job Offers
+              <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+            </a>
+            <div class="mdc-expansion-panel" id="job-post-submenu">
+              <nav class="mdc-list mdc-drawer-submenu">
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../../pages/job-offers/job-offers.html">
+                      Send Job Offer
+                    </a>
+                </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                  <a class="mdc-drawer-link" href="../../pages/job-offers/job-offer-preview.html">
+                    Job Offer Preview
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="profile-actions">
+        <a href="javascript:;">Logout</a>
+      </div>
+    </div>
+  </aside>
+  <!-- partial -->
+  <div class="main-wrapper mdc-drawer-app-content">
+    <!-- partial:partials/_navbar.html -->
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button sidebar-toggler">menu</button>
+          <span class="mdc-top-app-bar__title">Greetings Admin!</span>
+          <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon search-text-field d-none d-md-flex">
+            <i class="material-icons mdc-text-field__icon">search</i>
+            <input class="mdc-text-field__input" id="text-field-hero-input">
+            <div class="mdc-notched-outline">
+              <div class="mdc-notched-outline__leading"></div>
+              <div class="mdc-notched-outline__notch">
+                <label for="text-field-hero-input" class="mdc-floating-label">Search..</label>
+              </div>
+              <div class="mdc-notched-outline__trailing"></div>
+            </div>
+          </div>
+          <a href="../../pages/job-post/create-post.html"><button class="mdc-button mdc-button--raised" style="border-radius: 20px; margin-left: 20px;"><i class="material-icons mdc-button__icon">add</i>Create a Post</button></a>
+        </div>
+        <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-top-app-bar__section-right">
+          <div class="menu-button-container menu-profile d-none d-md-block">
+            <button class="mdc-button mdc-menu-button">
+              <span class="d-flex align-items-center">
+                <span class="figure">
+                  <img src="../../../assets/images/faces/face1.jpg" alt="user" class="user">
+                </span>
+                <span class="user-name">Admin</span>
+              </span>
+            </button>
+            <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+              <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                <li class="mdc-list-item" role="menuitem">
+                  <div class="item-thumbnail item-thumbnail-icon-only">
+                    <i class="mdi mdi-account-edit-outline text-primary"></i>
+                  </div>
+                  <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="item-subject font-weight-normal">Edit profile</h6>
+                  </div>
+                </li>
+                <li class="mdc-list-item" role="menuitem">
+                  <div class="item-thumbnail item-thumbnail-icon-only">
+                    <i class="mdi mdi-settings-outline text-primary"></i>                      
+                  </div>
+                  <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="item-subject font-weight-normal">Logout</h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="divider d-none d-md-block"></div>
+          <div class="menu-button-container">
+            <button class="mdc-button mdc-menu-button">
+              <i class="mdi mdi-bell"></i>
+            </button>
+            <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+              <h6 class="title"> <i class="mdi mdi-bell-outline mr-2 tx-16"></i> Notifications</h6>
+              <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                <li class="mdc-list-item" role="menuitem">
+                  <div class="item-thumbnail item-thumbnail-icon">
+                    <i class="mdi mdi-email-outline"></i>
+                  </div>
+                  <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="item-subject font-weight-normal">You received a new message</h6>
+                    <small class="text-muted"> 6 min ago </small>
+                  </div>
+                </li>
+                <li class="mdc-list-item" role="menuitem">
+                  <div class="item-thumbnail item-thumbnail-icon">
+                    <i class="mdi mdi-account-outline"></i>                      
+                  </div>
+                  <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="item-subject font-weight-normal">New user registered</h6>
+                    <small class="text-muted"> 15 min ago </small>
+                  </div>
+                </li>
+                <li class="mdc-list-item" role="menuitem">
+                  <div class="item-thumbnail item-thumbnail-icon">
+                    <i class="mdi mdi-alert-circle-outline"></i>
+                  </div>
+                  <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="item-subject font-weight-normal">System Alert</h6>
+                    <small class="text-muted"> 2 days ago </small>
+                  </div>
+                </li> 
+                <li class="mdc-list-item" role="menuitem">
+                  <div class="item-thumbnail item-thumbnail-icon">
+                    <i class="mdi mdi-update"></i>
+                  </div>
+                  <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="item-subject font-weight-normal">You have a new update</h6>
+                    <small class="text-muted"> 3 days ago </small>
+                  </div>
+                </li> 
+              </ul>
+            </div>
+          </div>
+          <div class="menu-button-container d-none d-md-block">
+            <button class="mdc-button mdc-menu-button">
+              <i class="mdi mdi-arrow-down-bold-box"></i>
+            </button>
+            <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+              <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                <li class="mdc-list-item" role="menuitem">
+                  <div class="item-thumbnail item-thumbnail-icon-only">
+                    <i class="mdi mdi-logout-variant text-primary"></i>                      
+                  </div>
+                  <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="item-subject font-weight-normal">Logout</h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!-- partial -->
+      <div class="page-wrapper mdc-toolbar-fixed-adjust">
+        <main class="content-wrapper">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                    <div class="mdc-card">
+                        <div id="svg_wrap"></div>
+                        <section>
+                            <h1 class="text-center">Job Details</h1>
+                            <div class="d-flex justify-content-start">
+                                <div class="mdc-select demo-width-class bg-white" style="margin-left: 13px;" data-mdc-auto-init="MDCSelect">
+                                    <input type="hidden" name="enhanced-select">
+                                    <i class="mdc-select__dropdown-icon"></i>
+                                    <div class="mdc-select__selected-text"></div>
+                                    <div class="mdc-select__menu mdc-menu-surface demo-width-class">
+                                      <ul class="mdc-list">
+                                        <li class="mdc-list-item mdc-list-item--selected" data-value="" aria-selected="true">
+                                        </li>
+                                        <li class="mdc-list-item" data-value="grains">
+                                          Bread, Cereal, Rice, and Pasta
+                                        </li>
+                                        <li class="mdc-list-item" data-value="vegetables">
+                                          Vegetables
+                                        </li>
+                                        <li class="mdc-list-item" data-value="fruit">
+                                          Fruit
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <span class="mdc-floating-label text-primary" style="font-weight: 700;">Sort by:</span>
+                                    <div class="mdc-line-ripple"></div>
+                                  </div>
+                                  <div class="mdc-select demo-width-class bg-white" data-mdc-auto-init="MDCSelect">
+                                    <input type="hidden" name="enhanced-select">
+                                    <i class="mdc-select__dropdown-icon"></i>
+                                    <div class="mdc-select__selected-text"></div>
+                                    <div class="mdc-select__menu mdc-menu-surface demo-width-class">
+                                      <ul class="mdc-list">
+                                        <li class="mdc-list-item mdc-list-item--selected" data-value="" aria-selected="true">
+                                        </li>
+                                        <li class="mdc-list-item" data-value="grains">
+                                          Bread, Cereal, Rice, and Pasta
+                                        </li>
+                                        <li class="mdc-list-item" data-value="vegetables">
+                                          Vegetables
+                                        </li>
+                                        <li class="mdc-list-item" data-value="fruit">
+                                          Fruit
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <span class="mdc-floating-label text-primary" style="font-weight: 700;">Filter by:</span>
+                                    <div class="mdc-line-ripple"></div>
+                                  </div>
+                            </div>
+                              <div class="mdc-layout-grid">
+                                <div class="mdc-layout-grid__inner">
+                                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                    <div class="mdc-card p-0">
+                                      <div class="mdc-card">
+                                        <div class="text-left">
+                                            <h4 class="card-title mb-2 mb-sm-0">IT Technical Support</h4>
+                                            <p class="text-primary tx-12" style="font-weight: 700;">Total Applicants: <span>25</span>
+                                          </div>
+                                      </div>
+                                      <div class="table-responsive">
+                                        <table class="table">
+                                          <thead class="bg-primary">
+                                            <tr>
+                                              <th class="text-left text-white">ID</th>
+                                              <th class="text-white">FULL NAME</th>
+                                              <th class="text-white">DATE OF BIRTH</th>
+                                              <th class="text-white">CONTACT</th>
+                                              <th class="text-white">EMAIL</th>
+                                              <th class="text-white">JOB APPLIED</th>
+                                              <th class="text-white">DATE OF APPLICATION</th>
+                                              <th class="text-white">STATUS</th>
+                                              <th class="text-white">ACTION</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td class="text-left">1</td>
+                                              <td>Art Christian Awitin</td>
+                                              <td>9/10/2000</td>
+                                              <td>09954031465</td>
+                                              <td>art@gmail.com</td>
+                                              <td>IT Technical Support</td>
+                                              <td>01/11/2021</td>
+                                              <td>Available</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="text-left">2</td>
+                                              <td>Trisha Quinto</td>
+                                              <td>3/27/1999</td>
+                                              <td>09776191679</td>
+                                              <td>trisha@gmail.com</td>
+                                              <td>IT Technical Support</td>
+                                              <td>01/11/2021</td>
+                                              <td>Unavailable</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="text-left">3</td>
+                                              <td>Junihench Actub</td>
+                                              <td>8/20/2000</td>
+                                              <td>09267838334</td>
+                                              <td>juni@gmail.com</td>
+                                              <td>IT Technical Support</td>
+                                              <td>01/11/2021</td>
+                                              <td>Available</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="text-left">4</td>
+                                              <td>Roy Johairi Lucman</td>
+                                              <td>9/10/2000</td>
+                                              <td>09954031465</td>
+                                              <td>roy@gmail.com</td>
+                                              <td>IT Technical Support</td>
+                                              <td>01/11/2021</td>
+                                              <td>Unavailable</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </section>
+
+                        <section>
+                            <h1 class="text-center">Shortlist of Applicants</h1>
+                            <div class="mdc-layout-grid">
+                                <div class="mdc-layout-grid__inner">
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+                                    <div class="mdc-card">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h4 class="card-title mb-2 mb-sm-0">Filter Applicants</h4>
+                                            </div> 
+                                        <div class="container text-left">
+                                            <h5 class="text-primary" style="margin-top: 20px;">ELIGIBILITY</h5>
+                                            <h6>You may check more than one <span style="color: red;">*</span></h6>
+                                            <div class="form-check text-left">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                                    None
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                                    Civil Service Sub-Professional
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                                    Civil Service Professional
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                                    RA 1080 (Bar/Board)
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                                    Other Eligibilities Granted under Speacial Laws
+                                                </label>
+                                              </div>
+                                        </div>
+                                        <div class="container text-left">
+                                            <h5 class="text-primary" style="margin-top: 30px;">COURSE</h5>
+                                            <h6>Choose College Department  <span style="color: red;">*</span></h6>
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: auto;">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                            <h6 style="margin-top: 20px;">Choose College Course <span style="color: red;">*</span></h6>
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: auto;">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="container text-left">
+                                            <h5 class="text-primary" style="margin-top: 30px;">EDUCATIONAL ATTAINMENT</h5>
+                                            <h6>Select Highest Educational Attainment <span style="color: red;">*</span></h6>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1" style="font-size: 15px;">
+                                                    Post Graduate Studies
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1" style="font-size: 15px;">
+                                                    Bachelor’s Degree
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1" style="font-size: 15px;">
+                                                    High School
+                                                </label>
+                                              </div>  
+                                        </div>
+                                        <div class="container text-left">
+                                            <h5 class="text-primary" style="margin-top: 30px;">WORK EXPERIENCE</h5>
+                                            <h6>Choose Minimum Years of Experience<span style="color: red;">*</span></h6>
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: auto;">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">5 years or more experience</option>
+                                                <option value="2">4.1 to 5 years experience</option>
+                                                <option value="3">3.1 to 4 years experience</option>
+                                                <option value="4">2.1 to 3 years experience</option>
+                                                <option value="5">1 to 2 years experience</option>
+                                              </select>
+                                        </div>
+                                        <div class="container text-left">
+                                            <h5 class="text-primary" style="margin-top: 30px;">NO. OF APPLICANTS</h5>
+                                            <h6>Input the Number of Applicants you want to Shortlist<span style="color: red;">*</span></h6>
+                                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: auto;">
+                                        </div>
+                                        <div class="container d-flex justify-content-start" style="margin: 30px 0px 30px 0px;">
+                                            <button class="mdc-button mdc-button--primary">
+                                                SHORTLIST APPLICANTS
+                                              </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
+                                    <div class="mdc-card">
+                                        <div class="text-left">
+                                          <h4 class="card-title mb-2 mb-sm-0">IT Technical Support</h4>
+                                          <p class="text-primary tx-12" style="font-weight: 700;">Total Applicants: <span>25</span>
+                                        </div>
+                                      <div class="table-responsive">
+                                        <table class="table">
+                                          <thead class="bg-primary">
+                                            <tr>
+                                              <th class="text-left text-white">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: 20px;"> 
+                                                ID</th>
+                                              <th class="text-white">FULL NAME</th>
+                                              <th class="text-white">DATE OF APPLICATION</th>
+                                              <th class="text-white">STATUS</th>
+                                              <th class="text-white">ACTION</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td class="text-left">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: 20px;">
+                                                  1</td>
+                                              <td>Art Christian Awitin</td>
+                                              <td>01/11/2021</td>
+                                              <td>Pending</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="text-left">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: 20px;">  
+                                                2</td>
+                                              <td>Trisha Quinto</td>
+                                              <td>01/11/2021</td>
+                                              <td>Pending</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="text-left">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: 20px;">
+                                                3</td>
+                                              <td>Junihench Actub</td>
+                                              <td>01/11/2021</td>
+                                              <td>Pending</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                            </tr>
+                                            <tr>
+                                              <td class="text-left">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: 20px;">
+                                                4</td>
+                                              <td>Roy Johairi Lucman</td>
+                                              <td>01/11/2021</td>
+                                              <td>Pending</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <button class="mdc-button mdc-button--raised" style="background-color: #F7B41E;">ADD TO SHORTLIST</button>
+                    
+                                      <div class="text-left" style="margin-top: 100px;">
+                                        <h4 class="card-title mb-2 mb-sm-0">Shortlisted Applicants</h4>
+                                        <p class="text-primary tx-12" style="font-weight: 700;">Total Applicants: <span>4</span>
+                                      </div>
+                                      <div class="table-responsive">
+                                        <table class="table">
+                                          <thead class="bg-primary">
+                                            <tr>
+                                              <th class="text-left text-white">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: 20px;"> 
+                                                ID</th>
+                                              <th class="text-white">FULL NAME</th>
+                                              <th class="text-white">DATE OF APPLICATION</th>
+                                              <th class="text-white">STATUS</th>
+                                              <th class="text-white">ACTION</th>
+                                              <th class="text-white"></th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td class="text-left">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: 20px;">
+                                                  1</td>
+                                              <td>Art Christian Awitin</td>
+                                              <td>01/11/2021</td>
+                                              <td>Pending</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                              <td>
+                                                <!-- Button trigger modal -->
+                                                <a href="#"><i class="material-icons" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: red;">delete</i></a>
+                    
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        Do you really want to remove this applicant from the shortlist? This process cannot be undone.
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-danger">Remove</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td class="text-left">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: 20px;">  
+                                                2</td>
+                                              <td>Trisha Quinto</td>
+                                              <td>01/11/2021</td>
+                                              <td>Pending</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                              <td>
+                                                <!-- Button trigger modal -->
+                                                <a href="#"><i class="material-icons" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: red;">delete</i></a>
+                    
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        Do you really want to remove this applicant from the shortlist? This process cannot be undone.
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-danger">Remove</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td class="text-left">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: 20px;">
+                                                3</td>
+                                              <td>Junihench Actub</td>
+                                              <td>01/11/2021</td>
+                                              <td>Pending</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                              <td>
+                                                <!-- Button trigger modal -->
+                                                <a href="#"><i class="material-icons" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: red;">delete</i></a>
+                    
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        Do you really want to remove this applicant from the shortlist? This process cannot be undone.
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-danger">Remove</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td class="text-left">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="margin-right: 20px;">
+                                                4</td>
+                                              <td>Roy Johairi Lucman</td>
+                                              <td>01/11/2021</td>
+                                              <td>Pending</td>
+                                              <td><a href="../../pages/applicants/view-applicants.html"><button class="mdc-button mdc-button--raised">View</button></a></td>
+                                              <td>
+                                                <!-- Button trigger modal -->
+                                                <a href="#"><i class="material-icons" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: red;">delete</i></a>
+                    
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        Do you really want to remove this applicant from the shortlist? This process cannot be undone.
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-danger">Remove</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                        </section>
+
+                        <section>
+                            <div class="mdc-layout-grid__inner">
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                    <div class="mdc-card">
+                                        <div class="text-left">
+                                            <h5 class="text-primary" style="font-size: 25px;">IT Technical Support</h5>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h4 class="card-title mb-2 mb-sm-0">Rate Applicants</h4>
+                                                </div> 
+                                                <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Total Applicants: <span>25</span></p>
+                                        </div>
+                                              <div class="card text-left" style="margin-top: 30px;">
+                                                <h5 class="card-header text-success" style="font-weight: 700;">Rank <span>1</span></h5>
+                                                  <div class="card-body">
+                                                  <div class="d-flex">
+                                                      <div class="p-2 flex-grow-1"><h5 class="card-title text-primary">Art Christian Awitin</h5></div>
+                                                      <div class="p-2 text-primary" style="font-weight: 700; margin-top: 10px;">Total Score: <span>100%</span></div>
+                                                      <div class="p-2"><a href="../../pages/jobs/rate-details.html"><button class="mdc-button mdc-button--raised">EDIT</button></a></div>
+                                                      <div class="p-2"><a href="../../pages/job-offers/job-offers.html"><button class="mdc-button mdc-button--success text-white">SEND JOB OFFER</button></a></div>
+                                                  </div>
+                                                  <div class="credentials" style="margin-left:10px;">
+                                                    <div class="d-flex justify-content-start">
+                                                      <i class="fas fa-briefcase"></i>
+                                                      <p class="card-text" style="margin-left: 5px;">Web Developer <span>(2015-2017)</span></p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start">
+                                                      <i class="fas fa-briefcase"></i>
+                                                      <p class="card-text" style="margin-left: 5px;">IT Technical Support <span>(2015-2017)</span></p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start">
+                                                      <i class="fas fa-graduation-cap"></i>
+                                                      <p class="card-text" style="margin-left: 5px;">Bachelor's Degree of Information Technology(2014)</p>
+                                                    </div>  
+                                                  </div>
+                                              </div>
+                                              </div>   
+                                              <div class="card text-left" style="margin-top: 30px;">
+                                                <h5 class="card-header text-success" style="font-weight: 700;">Rank <span>2</span></h5>
+                                                  <div class="card-body">
+                                                  <div class="d-flex">
+                                                      <div class="p-2 flex-grow-1"><h5 class="card-title text-primary">Roy Johairi Lucman</h5></div>
+                                                      <div class="p-2 text-primary" style="font-weight: 700; margin-top: 10px;">Total Score: <span>90%</span></div>
+                                                      <div class="p-2"><a href="../../pages/jobs/rate-details.html"><button class="mdc-button mdc-button--raised">EDIT</button></a></div>
+                                                      <div class="p-2"><a href="../../pages/job-offers/job-offers.html"><button class="mdc-button mdc-button--success text-white">SEND JOB OFFER</button></a></div>
+                                                  </div>
+                                                  <div class="credentials" style="margin-left:10px;">
+                                                    <div class="d-flex justify-content-start">
+                                                      <i class="fas fa-briefcase"></i>
+                                                      <p class="card-text" style="margin-left: 5px;">Web Developer <span>(2015-2017)</span></p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start">
+                                                      <i class="fas fa-graduation-cap"></i>
+                                                      <p class="card-text" style="margin-left: 5px;">Bachelor's Degree of Information Technology(2014)</p>
+                                                    </div>  
+                                                  </div>
+                                                </div>
+                                            </div> 
+                                            <div class="card text-left" style="margin-top: 30px;">
+                                              <h5 class="card-header text-success" style="font-weight: 700;">Rank <span>-</span></h5>
+                                                <div class="card-body">
+                                                <div class="d-flex">
+                                                    <div class="p-2 flex-grow-1"><h5 class="card-title text-primary">Junihench Actub</h5></div>
+                                                    <div class="p-2"><a href="../../pages/jobs/rate-details.html"><button class="mdc-button mdc-button--raised" style="background-color: #F7B41E;">RATE</button></a></div>
+                                                </div>
+                                                <div class="credentials" style="margin-left:10px;">
+                                                <div class="d-flex justify-content-start">
+                                                  <i class="fas fa-briefcase"></i>
+                                                  <p class="card-text" style="margin-left: 5px;">Web Developer <span>(2015-2017)</span></p>
+                                                </div>
+                                                <div class="d-flex justify-content-start">
+                                                  <i class="fas fa-briefcase"></i>
+                                                  <p class="card-text" style="margin-left: 5px;">IT Technical Support <span>(2015-2017)</span></p>
+                                                </div>
+                                                <div class="d-flex justify-content-start">
+                                                  <i class="fas fa-graduation-cap"></i>
+                                                  <p class="card-text" style="margin-left: 5px;">Bachelor's Degree of Information Technology(2014)</p>
+                                                </div>           
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="card text-left" style="margin-top: 30px;">
+                                          <h5 class="card-header text-success" style="font-weight: 700;">Rank <span>-</span></h5>
+                                            <div class="card-body">
+                                            <div class="d-flex">
+                                                <div class="p-2 flex-grow-1"><h5 class="card-title text-primary">Trisha Quinto</h5></div>
+                                                <div class="p-2"><a href="../../pages/jobs/rate-details.html"><button class="mdc-button mdc-button--raised" style="background-color: #F7B41E;">RATE</button></a></div>
+                                            </div>
+                                            <div class="credentials" style="margin-left:10px;">
+                                              <div class="d-flex justify-content-start">
+                                                <i class="fas fa-briefcase"></i>
+                                                <p class="card-text" style="margin-left: 5px;">IT Technical Support <span>(2015-2017)</span></p>
+                                              </div>
+                                              <div class="d-flex justify-content-start">
+                                                <i class="fas fa-graduation-cap"></i>
+                                                <p class="card-text" style="margin-left: 5px;">Bachelor's Degree of Information Technology(2014)</p>
+                                              </div> 
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    </div>
+                                </div>
+                        </section>
+
+                        <section>
+                        <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12 text-left">
+                <div class="mdc-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="card-title mb-2 mb-sm-0">Art Christian Awitin</h4>
+                    </div> 
+                    <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Status: <span>ACTIVE</span></p>
+                    <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">IT Technical Support</span></p>    
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4 text-left">
+                <div class="mdc-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="card-title mb-2 mb-sm-0">Education</h4>
+                    </div> 
+                    <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Total: <span>25%</span></p><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Full-fledge relevant Doctoral degree</label>
+                      </div>
+                      <h6 style="margin-top: 20px;">w/ Doctoral degree units:</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">w/ CAR</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">w/ 20 units</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">w/ 11-19 units</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">w/ 6-10 units</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Appropriate  Master’s degree required (min.)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Bachelor’s Degree</label>
+                      </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4 text-left">
+                <div class="mdc-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="card-title mb-2 mb-sm-0">Experience</h4>
+                    </div> 
+                    <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Total: <span>15%</span></p><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">5 years or more relevant experience</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">4.1 to 5 years relevant experience</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">3.1 to 4 years relevant experience</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">2.1 to 3 years relevant experience</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">1 to 2 years relevant experience</label>
+                      </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4 text-left">
+                <div class="mdc-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="card-title mb-2 mb-sm-0">Training/Seminars/ Workshop etc.</h4>
+                    </div> 
+                    <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Total: <span>15%</span></p><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">24 hours or more</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">16.1 to 24 hours</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">12.1 to 16 hours</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">8.1 to 12 hours</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">4 to 8 hours (min.)</label>
+                      </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4 text-left">
+                <div class="mdc-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="card-title mb-2 mb-sm-0">Interview</h4>
+                    </div> 
+                    <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Total: <span>30%</span></p><br>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Based on the Interview:</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Input Interview Score">
+                      </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4 text-left">
+                <div class="mdc-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="card-title mb-2 mb-sm-0">Teaching Demo</h4>
+                    </div> 
+                    <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Total: <span>10%</span></p><br>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Teaching Demo:</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Input Teaching Demo Score">
+                      </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4 text-left">
+                <div class="mdc-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="card-title mb-2 mb-sm-0">Potential</h4>
+                    </div> 
+                    <p class="d-none d-sm-block text-primary tx-12 mb-0 mr-2" style="font-weight: 700;">Total: <span>5%</span></p><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">Exeptional, exceeds and fully meets all requirements</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">Advantageous, exceeds some requirementsours</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">Meets minimal requirements</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">Addresses most of the minimal requirements</label>
+                      </div><br>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">Addresses part of the minimal requirements</label>
+                      </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                <div class="mdc-card text">
+                    <div class="d-flex justify-content-center">
+                        <h3 class="text-primary" style="font-weight: 700; margin-right: 60px;">Total Score: <span><u>90%</u></span></h3>
+                        <h3 class="text-primary" style="font-weight: 700;">Partial Rank: <span><u>1</u></span></h3>
+                    </div>
+                    <div class="d-flex justify-content-center" style="margin-top:50px;">
+                        <a href="../../pages/jobs/rate.html"><button class="mdc-button mdc-button--raised" style="background-color: #F7B41E;margin-right: 60px;">SAVE RATE</button></a>
+                        <button class="mdc-button mdc-button--raised">RESET RATE</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+                        </section>
+
+                        <section>
+                        <p>General condtitions</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </section>
+
+                        <div class="d-flex justify-content-center">
+                            <div class="button" id="prev">&larr; Previous</div>
+                            <div class="button" id="next">Next &rarr;</div>
+                            <div class="button" id="submit">Agree and send application</div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>            
+        </main>
+        <!-- partial -->
+      </div>   
+  </div>
+</div>
+  <!-- plugins:js -->
+  <script src="../../../assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <!--Boostrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="../../../assets/js/progress.js"></script>
+  <script src="../../../assets/js/material.js"></script>
+  <script src="../../../assets/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+</html>
