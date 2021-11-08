@@ -40,26 +40,25 @@ p {
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: 1px solid #673AB7;
+  border: 1px solid #08376B;
   outline-width: 0
 }
 
 #msform .action-button {
-  width: 100px;
-  background: #673AB7;
+  background: #08376B;
   font-weight: bold;
   color: white;
   border: 0 none;
-  border-radius: 0px;
+  border-radius: 2px;
   cursor: pointer;
-  padding: 10px 5px;
-  margin: 10px 0px 10px 5px;
+  padding: 10px 10px;
+  margin: 10px 10px 10px 5px;
   float: right
 }
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-  background-color: #311B92
+  background-color: #0070D0;
 }
 
 #msform .action-button-previous {
@@ -80,7 +79,7 @@ p {
   background-color: #000000
 }
 
-.card {
+.inner {
   z-index: 0;
   border: none;
   position: relative
@@ -88,14 +87,14 @@ p {
 
 .fs-title {
   font-size: 25px;
-  color: #673AB7;
+  color: #08376B;
   margin-bottom: 15px;
   font-weight: normal;
   text-align: left
 }
 
 .purple-text {
-  color: #673AB7;
+  color: #08376B;
   font-weight: normal
 }
 
@@ -119,7 +118,7 @@ p {
 }
 
 #progressbar .active {
-  color: #673AB7
+  color: #08376B
 }
 
 #progressbar li {
@@ -173,7 +172,7 @@ p {
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-  background: #673AB7
+  background: #08376B
 }
 
 .progress {
@@ -181,10 +180,12 @@ p {
 }
 
 .progress-bar {
-  background-color: #673AB7
+  background-color: #08376B
 }
 
 .fit-image {
   width: 100%;
   object-fit: cover
 }
+
+/*Cards*/

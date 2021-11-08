@@ -260,7 +260,7 @@
                     <div class="mdc-card">
                       <div class="container-fluid">
                         <div class="row justify-content-center">
-                            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                            <div class="card px-0 pt-4 pb-0 mt-3 mb-3 inner">
                                     <form id="msform">
                                         <!-- progressbar -->
                                         <ul id="progressbar">
@@ -594,15 +594,12 @@
                                                             </tbody>
                                                           </table>
                                                         </div>
-                                                          <div class="d-flex justify-content-center">
-                                                            <a href="../../pages/jobs/rate.html"><button class="mdc-button mdc-button--raised" style="background-color: #F7B41E;">RATE APPLICANTS</button></a>
-                                                          </div>
                                                       </div>
                                                     </div>
                                                   </div>
                                                 </div>
                                             </div> 
-                                            <input type="button" name="next" class="next action-button" value="Next" />
+                                            <input type="button" name="next" class="next action-button" value="RATE APPLICANTS" />
                                         </fieldset>
                                         <fieldset>
                                             <div class="form-card">
@@ -626,7 +623,6 @@
                                                                         <div class="p-2 flex-grow-1"><h5 class="card-title text-primary">Art Christian Awitin</h5></div>
                                                                         <div class="p-2 text-primary" style="font-weight: 700; margin-top: 10px;">Total Score: <span>100%</span></div>
                                                                         <div class="p-2"><a href="../../pages/jobs/rate-details.html"><button class="mdc-button mdc-button--raised">EDIT</button></a></div>
-                                                                        <div class="p-2"><a href="../../pages/job-offers/job-offers.html"><button class="mdc-button mdc-button--success text-white">SEND JOB OFFER</button></a></div>
                                                                     </div>
                                                                     <div class="credentials" style="margin-left:10px;">
                                                                       <div class="d-flex justify-content-start">
@@ -651,7 +647,6 @@
                                                                         <div class="p-2 flex-grow-1"><h5 class="card-title text-primary">Roy Johairi Lucman</h5></div>
                                                                         <div class="p-2 text-primary" style="font-weight: 700; margin-top: 10px;">Total Score: <span>90%</span></div>
                                                                         <div class="p-2"><a href="../../pages/jobs/rate-details.html"><button class="mdc-button mdc-button--raised">EDIT</button></a></div>
-                                                                        <div class="p-2"><a href="../../pages/job-offers/job-offers.html"><button class="mdc-button mdc-button--success text-white">SEND JOB OFFER</button></a></div>
                                                                     </div>
                                                                     <div class="credentials" style="margin-left:10px;">
                                                                       <div class="d-flex justify-content-start">
@@ -711,19 +706,140 @@
                                                   </div>
                                                   </div>
                                                 </div>
-                                            </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                            </div> <input type="button" name="next" class="next action-button" value="SEND JOB OFFER" /> <input type="button" name="previous" class="previous action-button-previous" value="PREVIOUS" />
                                         </fieldset>
                                         <fieldset>
                                             <div class="form-card">
-                                                <div class="row">
-                                                    <div class="col-7">
-                                                        <h2 class="fs-title">Image Upload:</h2>
+                                              <div class="justify-content-end">
+                                                <h2 class="steps">Step 3 - 4</h2>
+                                              </div>
+                                              <div class="mdc-layout-grid">
+                                                <div class="mdc-layout-grid__inner">
+                                                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-4-desktop stretch-card">
+                                                    <div class="mdc-card">
+                                                      <h5 class="card-title text-primary" style="font-weight: 700; font-size: 25px;">Ranked Applicants</h5> 
+                                                      <h6>Select Applicants you want to send Job Offer:</h6> 
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                            <label class="form-check-label" for="flexCheckChecked">
+                                                              <div class="card border-primary mb-3" style="max-width: 18rem;">
+                                                                <div class="card-header text-white bg-primary" style="font-weight: 700;">Rank 1</div>
+                                                                <div class="card-body text-primary">
+                                                                  <h5 class="card-title">Art Christian Awitin</h5>
+                                                                  <div class="d-flex justify-content-start">
+                                                                    <i class="fas fa-briefcase"></i>
+                                                                    <p class="card-text" style="margin-left: 5px;">Web Developer <span>(2015-2017)</span></p>
+                                                                  </div>
+                                                                  <div class="d-flex justify-content-start">
+                                                                    <i class="fas fa-briefcase"></i>
+                                                                    <p class="card-text" style="margin-left: 5px;">IT Technical Support <span>(2015-2017)</span></p>
+                                                                  </div>
+                                                                  <div class="d-flex justify-content-start">
+                                                                    <i class="fas fa-graduation-cap"></i>
+                                                                    <p class="card-text" style="margin-left: 5px;">Bachelor's Degree of Information Technology(2014)</p>
+                                                                  </div> 
+                                                                </div>
+                                                              </div>
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                              <div class="card border-primary mb-3" style="max-width: 18rem;">
+                                                                <div class="card-header text-white bg-primary" style="font-weight: 700;">Rank 2</div>
+                                                                <div class="card-body text-primary">
+                                                                  <h5 class="card-title">Roy Johairi Lucman</h5>
+                                                                  <div class="d-flex justify-content-start">
+                                                                    <i class="fas fa-briefcase"></i>
+                                                                    <p class="card-text" style="margin-left: 5px;">Web Developer <span>(2015-2017)</span></p>
+                                                                  </div>
+                                                                  <div class="d-flex justify-content-start">
+                                                                    <i class="fas fa-graduation-cap"></i>
+                                                                    <p class="card-text" style="margin-left: 5px;">Bachelor's Degree of Information Technology(2014)</p>
+                                                                  </div>  
+                                                                </div>
+                                                              </div>
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                              <div class="card border-primary mb-3" style="max-width: 18rem;">
+                                                                <div class="card-header text-white bg-primary" style="font-weight: 700;">Rank 3</div>
+                                                                <div class="card-body text-primary">
+                                                                  <h5 class="card-title">Junihench Actub</h5>
+                                                                  <div class="d-flex justify-content-start">
+                                                                    <i class="fas fa-briefcase"></i>
+                                                                    <p class="card-text" style="margin-left: 5px;">Web Developer <span>(2015-2017)</span></p>
+                                                                  </div>
+                                                                  <div class="d-flex justify-content-start">
+                                                                    <i class="fas fa-briefcase"></i>
+                                                                    <p class="card-text" style="margin-left: 5px;">IT Technical Support <span>(2015-2017)</span></p>
+                                                                  </div>
+                                                                  <div class="d-flex justify-content-start">
+                                                                    <i class="fas fa-graduation-cap"></i>
+                                                                    <p class="card-text" style="margin-left: 5px;">Bachelor's Degree of Information Technology(2014)</p>
+                                                                  </div>  
+                                                                </div>
+                                                              </div>
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                              <div class="card border-primary mb-3" style="max-width: 18rem;">
+                                                                <div class="card-header text-white bg-primary" style="font-weight: 700;">Rank 4</div>
+                                                                <div class="card-body text-primary">
+                                                                  <h5 class="card-title">Trisha Quinto</h5>
+                                                                  <div class="d-flex justify-content-start">
+                                                                    <i class="fas fa-briefcase"></i>
+                                                                    <p class="card-text" style="margin-left: 5px;">IT Technical Support <span>(2015-2017)</span></p>
+                                                                  </div>
+                                                                  <div class="d-flex justify-content-start">
+                                                                    <i class="fas fa-graduation-cap"></i>
+                                                                    <p class="card-text" style="margin-left: 5px;">Bachelor's Degree of Information Technology(2014)</p>
+                                                                  </div> 
+                                                                </div>
+                                                              </div>
+                                                            </label>
+                                                          </div>
+                                                      </div>
                                                     </div>
-                                                    <div class="col-5">
-                                                        <h2 class="steps">Step 3 - 4</h2>
+                                                  <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop stretch-card">
+                                                    <div class="mdc-card">
+                                                      <h5 class="card-title text-primary" style="font-weight: 700; font-size: 25px;">Send Job Offer</h5>  
+                                                      <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 700; font-size: 20px;">Date</label>
+                                                        <input type="date" class="form-control" id="bday" placeholder=""> 
+                                                      </div>
+                                    
+                                                      <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 700; font-size: 20px;">Salutatation</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                                      </div>
+                                    
+                                                      <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 700; font-size: 20px;">Letter Body</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                                                      </div>
+                                                      
+                                                      <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 700; font-size: 20px;">Closing</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                                      </div>
+                                    
+                                                      <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: 700; font-size: 20px;">Signature</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                      </div>
+                                                      <div class="d-flex justify-content-center">
+                                                        <a href="../../pages/job-offers/job-offer-preview.html"><button class="mdc-button mdc-button--raised" style="padding: 30px; font-size: 15px;  margin-top: 20px; margin-right:20px; background-color: #F7B41E;">PREVIEW</button></a>
+                                                      </div>
                                                     </div>
-                                                </div> <label class="fieldlabels">Upload Your Photo:</label> <input type="file" name="pic" accept="image/*"> <label class="fieldlabels">Upload Signature Photo:</label> <input type="file" name="pic" accept="image/*">
-                                            </div> <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                                  </div>
+                                                </div>
+                                                </div>    
+                                              </div> <input type="button" name="next" class="next action-button" value="SEND" /> <input type="button" name="previous" class="previous action-button-previous" value="PREVIOUS" />
                                         </fieldset>
                                         <fieldset>
                                             <div class="form-card">
