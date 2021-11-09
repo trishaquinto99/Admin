@@ -1,4 +1,3 @@
-
 p {
   color: grey
 }
@@ -124,26 +123,30 @@ p {
 #progressbar li {
   list-style-type: none;
   font-size: 15px;
-  width: 25%;
+  width: 20%;
   float: left;
   position: relative;
   font-weight: 400
 }
 
-#progressbar #account:before {
+#progressbar #shortlist:before {
   content: "1"
 }
 
-#progressbar #personal:before {
+#progressbar #screening:before {
   content: "2"
 }
 
-#progressbar #payment:before {
+#progressbar #rating:before {
   content: "3"
 }
 
-#progressbar #confirm:before {
+#progressbar #joboffer:before {
   content: "4"
+}
+
+#progressbar #onboarding:before {
+  content: "5"
 }
 
 #progressbar li:before {
@@ -189,3 +192,77 @@ p {
 }
 
 /*Cards*/
+
+/*view button in shortlist*/
+.view-btn{
+
+  width:100%;
+  padding:5px 10px 5px 10px;
+  background: #08376B;
+  color:white;
+  font-weight: 700;
+
+}
+
+
+.checklists{
+  margin:8px;
+  font-size:30px;
+}
+
+
+/*show rate*/
+
+.form {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate-btn{
+  width:100%;
+  padding:5px 15px 5px 15px;
+  background: #F7B41E !important;
+  color:white;
+  font-weight: 700;
+  font-size:  16px;
+}
+
+.rate-btn2{
+  width:100%;
+  padding:5px 15px 5px 15px;
+  background: #08376B !important;
+  color:white;
+  font-weight: 700;
+  font-size:  16px;
+}
+
+.save-rate-btn{
+  
+  padding:5px 10px 5px 10px;
+  background: #08376B !important;
+  color:white;
+  font-weight: 700;
+  margin:10px;
+}
+
+.rate-title{
+  width: 100%;
+  color: white;
+  background-color: #0070D0;
+  text-align: center;
+  padding:5px 0 5px 0;
+}
+
+.mdc-cards{
+  padding:0 !important;
+}
+
+.form-check{
+  margin:0 15px 10px 15px;
+  
+}
+
+.sulod{
+  padding:0 15px 15px 15px;
+}
